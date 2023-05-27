@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FLATICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/IMG/FAVICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/IMG/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/IMG/FAVICON/favicon-16x16.png">
+    <!-- <link rel="manifest" href="./assets/IMG/FAVICON/site.webmanifest"> -->
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/c6c098d8ed.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- IMPORTED STYLES CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>ZBOH Personal web-page</title>
+
+</head>
+
+<body onload="checkTime()">
+    <header>
+        <nav class="navbar navbar-expand-md bg-nav">
+            <div class="container">
+                <a href="#home">
+                    <img class="logoNav" src="./assets/IMG/BRAND-LOGO/LOGO ZOH.png" alt="logo ZBOH">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <img src="./assets/IMG/ICONS/menu.png" alt="menu navbar" class="menu-navbar">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#softskills">SOFTSKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hardskills">HARDSKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="linkUltimo">CONTACT</a>
+                    </li>
+
+                </ul>
+                <button id="themeButton" class="toggle-theme" onclick="toggleTheme()">
+                    <i id="themeIcon" class="fas fa-moon"></i>
+                    <button id="easter-egg" style="display:none">Don't press it!</button>
+            </div>
+        </nav>
+        <div id="home" class="wrapper text-center">
+            <div class="container text-center align-content-center">
+                <div class="row">
+                    <div class="col-12 first-text ">Hi! I'm <span id="zule">Zule</span>,</div>
+                    <div class="sec-text col-12 ">
+                        <ul>
+                            <li><span>Developer</span></li>
+                            <li><span>Urbanist</span></li>
+                            <li><span>Architect</span></li>
+                            <li><span>Data Scientist</span></li>
+                        </ul>
+                    </div>
+                    <p class="col-12 mt-4">Machine Learning | IT | AI</p>
+                </div>
+                <button type="button" id="btnCV" class="text-center justify-content-center">
+                    <a>Download CV</a>
+                </button>
+            </div>
+        </div>
+
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-lg-12 text-center py-5">
+                    <h2 class="mb-4">About me</h2>
+                </div>
+                <div class="col-md-5 col-12-xs d-flex align-items-center justify-content-center">
+                    <div class="wrapper_photo_cv">
+                        <div class="box_photo_cv"></div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12-xs d-flex align-items-center pt-4">
+                    <p id="pAbout"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-lg-12 text-center py-5">
+                    <h2 class="mb-4">Experience</h2>
+                    <span id="experienceText"></span>
+                </div>
+                <div class="timeline">
+                    <div class="center-line">
+                        <img src="./assets/IMG/ICONS/nowadays.png" class="scroll-icon" alt="">
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                            <i>
+                                <img src="./assets/IMG/BRAND-LOGO/DARLOY.jpg" class="icon" alt="">
+                            </i>
+                            <div class="details">
+                                <span class="title">
+                                    <h3>ARCHITECT</h3>
+                                </span>
+                                <span class="years-location">
+                                    <h5>Quito-Ecuador</h5>
+                                    <span>2019</span>
+                            </div>
+                            <p>
+                                <ul class="listIntern">
+                                    <li>Architectural-urban design</li>
+                                    <li>Computer graphics production with Adobe suite</li>
+                                </ul>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="row row-2">
+                        <section>
+                            <i>
+                                <img src="./assets/IMG/BRAND-LOGO/LOGO-SPAR.jfif" class="icon" alt="">
+                            </i>
+                            <div class="details">
+                                <span class="title">
+                                    <h3>CASHIER</h3>
+                                </span>
+                                <span class="years-location">
+                                    <h5>Barcelona-España</h5>
+                                    <span>2020</span>
+                                </span>
+                            </div>
+                            <p>
+                                <ul class="listIntern">
+                                    <li>Collection and invoicing manager</li>
+                                    <li>Replenishment and maintenance management.</li>
+                                    <li>Customer service</li>
+                                </ul>
+                            </p>
+                        </section>
+                    </div>
+                    <div class="row row-1">
+                        <section>
+                            <i>
+                                <img src="./assets/IMG/BRAND-LOGO/LEGO.png" class="icon" alt="">
+                            </i>
+                            <div class="details">
+                                <span class="title">
+                                    <h3>SALES ASSISTANT</h3>
+                                </span>
+                                <span class="years-location">
+                                    <h5>Barcelona-España</h5>
+                                    <span>2021</span>
+                            </div>
+                            <p>
+                                <ul class="listIntern">
+                                    <li>Responsible for order and cleanliness</li>
+                                    <li>Management of products in store and warehouse</li>
+                                    <li>Customer service</li>
+                                </ul>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="softskills" class="softskills py-2">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-lg-12 text-center py-5">
+                    <h2 class="mb-4">Softskills</h2>
+                    <span id="softskillsText"></span>
+                </div>
+                <div class="container_soft">
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/ASSERTIVE.png" alt="">
+                            <h3>Assertive</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Express ideas and opinions with clarity, respect and confidence.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/AUTONOMY (2).png" alt="">
+                            <h3>Autonomy</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Take initiative and responsibility in tasks without direct supervision.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/EMPATHY (2).jpg" alt="">
+                            <h3>Empathy</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Understand and connect emotionally with the needs of others.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/ENTER2.png" alt="">
+                            <h3>Availability</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Respond and act quickly to work demands and urgent situations.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/RESILIENCE.png" alt="">
+                            <h3>Resilience</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Overcoming challenges and adapting positively in difficult work situations.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/TEAMWORK2 (2).png" alt="">
+                            <h3>Teamwork</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Collaborate effectively to achieve common goals at work.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <img src="./assets/IMG/PHOTOS/TRAVEL.jpg" alt="">
+                            <h3>Willingness to travel</h3>
+                        </div>
+                        <div class="face back">
+                            <p>Willingness to travel as required for work needs.</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section id="hardskills" class="hardskills">
+        <div class="container reveal">
+            <div class="row">
+                <div class="col-lg-12 text-center py-5">
+                    <h2 class="mb-4">Hardskills</h2>
+                    <span id="hardskillsText"></span>
+                </div>
+                <div class="skills section" id="skills">
+                    <div class="skills_container grid">
+                        <div>
+                            <!--===========================================================EDUCATION==================================================-->
+                            <div class="skills_content skills_open">
+                                <div class="skills_header">
+                                    <div class="iconFirst"><i class="fa-solid fa-graduation-cap skills_icon"></i></div>
+                                    <div>
+                                        <h3 class="skills_titles">Education</h3>
+                                    </div>
+                                    <i class="fa-solid fa-angle-down skills_arrow"></i>
+                                </div>
+                                <div class="skills_list grid">
+                                    <div class="skills_data education">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--===========================================================LANGUAGES==================================================-->
+                            <div class="skills_content skills_close">
+                                <div class="skills_header">
+                                    <div class="iconFirst">
+                                        <i class="fa-solid fa-language skills_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="skills_titles">Languages</h3>
+                                    </div>
+                                    <i class="fa-solid fa-angle-down skills_arrow"></i>
+                                </div>
+                                <div class="skills_list grid">
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Spanish </h3>
+                                            <span class="skills_numer">Native</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_l1"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Catalan</h3>
+                                            <span class="skills_numer">Advanced</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_l2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">English</h3>
+                                            <span class="skills_numer">Upper-Intermediate</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_l3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">French</h3>
+                                            <span class="skills_numer">Elemental</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_l4"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--===========================================================SKILLS1==================================================-->
+                            <div class="skills_content skills_close ">
+                                <div class="skills_header">
+                                    <div class="iconFirst"> <i class="fa-solid fa-code skills_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="skills_titles">Front-end developer</h3>
+                                    </div>
+                                    <i class="fa-solid fa-angle-down skills_arrow"></i>
+                                </div>
+                                <div class="skills_list grid">
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">HTML</h3>
+                                            <span class="skills_numer">90%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_html"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">CSS</h3>
+                                            <span class="skills_numer">80%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_css"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">JavaScript</h3>
+                                            <span class="skills_numer">70%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_js"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">React</h3>
+                                            <span class="skills_numer">60%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_react"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--===========================================================SKILLS2==================================================-->
+                            <div class="skills_content skills_close">
+                                <div class="skills_header">
+                                    <div class="iconFirst">
+                                        <i class="fa-solid fa-server skills_icon"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="skills_titles">Back-end developer</h3>
+                                    </div>
+                                    <i class="fa-solid fa-angle-down skills_arrow"></i>
+                                </div>
+                                <div class="skills_list grid">
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Node Js</h3>
+                                            <span class="skills_numer">70%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_node"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Python</h3>
+                                            <span class="skills_numer">85%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_python"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--===========================================================SKILLS3==================================================-->
+                            <div class="skills_content skills_close">
+                                <div class="skills_header">
+                                    <div class="iconFirst"> <i class="fa-solid fa-swatchbook skills_icon"></i></div>
+                                    <div>
+                                        <h3 class="skills_titles">Architecture</h3>
+                                    </div>
+                                    <i class="fa-solid fa-angle-down skills_arrow"></i>
+                                </div>
+                                <div class="skills_list grid">
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Autocad</h3>
+                                            <span class="skills_numer">80%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_autocad"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Sketch</h3>
+                                            <span class="skills_numer">70%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_skecth"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Photoshop</h3>
+                                            <span class="skills_numer">90%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_photoshop"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <div class="skills_titles">
+                                            <h3 class="skills_name">Illustrator</h3>
+                                            <span class="skills_numer">90%</span>
+                                        </div>
+                                        <div class="skills_bar">
+                                            <span class="skills_percentage skills_illustrator"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-lg-12 text-center py-5">
+                    <h2 class="mb-4">Contact</h2>
+                    <span id="contactT"></span>
+                </div>
+                <div class="col-12 form-box text-center">
+                    <div class="container_contact">
+                        <form name="contactForm" onsubmit="return validateForm()" action="/assets/PHP/contact.php"
+                            method="post">
+                            <i class="fas fa-paper-plane iconForm"></i>
+                            <div class="input-group">
+                                <i class="fa-solid fa-user iconForm"></i>
+                                <label>Name</label>
+                                <input type="text" placeholder="Enter your name" id="name-form" onkeyup="validateName()"
+                                    required>
+                                <span id="name-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-at iconForm"></i>
+                                <label>Email</label>
+                                <input type="email" placeholder="Enter Email" id="email-form" onkeyup="validateEmail()"
+                                    required>
+                                <span id="email-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <i class="fa-solid fa-message iconForm"></i>
+                                <label>Message</label>
+                                <textarea rows="5" placeholder="min. 5 characters" id="message-form"
+                                    onkeyup="validateMessage()" required></textarea>
+                                <span id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn-form"><i
+                                    class="fa-solid fa-envelope-circle-check"></i></button>
+                            <span id="submit-error"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="scroll-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    </section>
+    <footer>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 footer-icons-section">
+                    <a href="https://www.linkedin.com/in/zulema-orellana-herrera/" target="_blank">
+                        <i class="fa-brands fa-linkedin footer-icons"></i>
+                    </a>
+                    <a href="https://github.com/zuzu9627" target="_blank">
+                        <i class="fa-brands fa-github footer-icons"></i>
+                    </a>
+                    <a href="https://www.facebook.com/zboh96/" target="_blank">
+                        <i class="fa-brands fa-facebook footer-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zu_27/" target="_blank">
+                        <i class="fa-brands fa-instagram footer-icons"></i>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6  " id="copyright">
+                    <p>© Designed and Developed by ZBOH.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main2.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
